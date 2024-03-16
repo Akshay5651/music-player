@@ -1,0 +1,407 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+#info {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#tracks {
+    height: 60%;
+    width: 60%;
+    background-color: #0008b0;
+}
+
+#tracks h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+#tracks #head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 2px solid #fff;
+    color: beige;
+}
+
+#album {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#album img {
+    height: 8vh;
+    width: 8vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+ol div {
+    color: orange;
+    font-weight: 600;
+}
+
+ol:hover {
+    cursor: pointer;
+}
+
+#playlist #song {
+    font-size: large;
+    text-align: center;
+    width: 35%;
+    color: red;
+    pointer-events: none;
+}
+
+#playlist h5,
+img,
+#song,
+#album {
+    color: #000;
+    pointer-events: none;
+}
+
+#playlist #duration {
+    font-size: 12px;
+    color: #fff;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav {
+    height: 8.2vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#nav h1 {
+    padding: 0px 40px;
+}
+
+#info {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+
+#tracks {
+    height: 60vh;
+    width: 60%;
+    background-color: #08113b;
+    background-image: url("https://th.bing.com/th/id/OIP.rQMj1z_O8iJ4a5xJ68ioFwHaEo?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    background-position: center;
+}
+
+#tracks h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+#tracks #head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 2px solid #fff;
+}
+
+#head div{
+    color: #000;
+}
+
+#album {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#album img {
+    height: 8vh;
+    width: 8vh;
+    object-fit: cover;
+}
+
+#playlist {
+    height: 46vh;
+    padding: 0px 20px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox and Edge */
+}
+
+#playlist ol {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    padding: 1vh 0;
+    background-color: #ffffff39;
+}
+
+#playlist ol:hover {
+    background-color: #e3e1ec5b;
+}
+
+#playlist #song {
+    text-align: center;
+    width: 35%;
+}
+
+#playlist #duration {
+    text-align: end;
+    width: 35%;
+}
+
+#right {
+    height: 100%;
+    width: 40%;
+    background-color: #08113b91;
+    border-left: 2px solid #fff;
+}
+
+#right h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+#artists {
+    height: 90%;
+    width: 100%;
+    background-color: #08113b;    
+    background-image: url("https://th.bing.com/th/id/R.d86a2579bd621399a5cf7255d172af7a?rik=UlExd74voln52Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2ff%2fb%2f446690.jpg&ehk=1Ma3gdwstWkRg6V%2bYKqZjSr15DhgESWtV42x9VNeGg0%3d&risl=&pid=ImgRaw&r=0");
+    display: grid;
+    background-size: cover;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox and Edge */
+}
+
+.artist {
+    max-height: 22vh;
+    width: 100%;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.artist img:hover {
+    cursor: pointer;
+}
+
+.artist img {
+    max-height: 19vh;
+    max-width: 11vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.artist p {
+    color: #000;
+    pointer-events: none;
+}
+
+.artist #detail {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(22, 179, 22);
+}
+
+/* Hide the scrollbar in IE and Firefox/Edge */
+.albumGrid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Set the overall container styles */
+#albums {
+    height: 15vh;
+    width: 100;
+    padding: 10px;
+    background-color: #08113b;
+    background-image: url("https://lh5.googleusercontent.com/proxy/4uF3RD0othILVJiIuxifduBWIkgRqcVmZOCBYm8CxHzwrsQIQfC406iT75alZ10Z5Rv1xGd7W83DtZIew2aEZimhQ-10NwQOPpmpBZJrcggBstToNA2p2T8OO8NYpRTItfuZ78kNTQzVvA=w1200-h630-p-k-no-nu");
+    background-size: contain;
+    border-top: 2px solid #fff;
+    overflow: hidden;
+    /* Hide both vertical and horizontal scrollbars */
+}
+
+/* Style for album titles */
+#albums h4 {
+    font-size: 14px;
+    margin-bottom: 1vh;
+}
+
+/* Scrollable container for album items */
+.albumGrid {
+    height: 80%;
+    min-width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    /* Hide the vertical scrollbar */
+}
+
+/* Individual album item styles */
+.album-item {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Style for album cover images */
+.album-item img {
+    height: 8vh;
+    width: 10vw;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-right: 1vh;
+}
+
+/* Album description text */
+.album-item p {
+    font-size: 12px;
+    color: beige;
+    font-weight: 500;
+}
+
+#footer {
+    height: 5vh;
+    padding: 20px;
+    display: flex;
+    background-color: #121010;
+    background-image: url("https://lh3.googleusercontent.com/proxy/Sln2fVNG1CHHkq77FARTQZ9pKMAZcaxN5ubSMXQbxbUSIDwXb-bab3LkaDukRfggksf6DtOsSyJmhXggmPgP3lKz84qUfwIwTHon=s0-d");
+}
+
+#now-playing {
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#now-playing img {
+    height: 8vh;
+    width: 6vw;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-right: 1vh;
+}
+
+#now-playing #song-name {
+    font-size: 10px;
+}
+
+#song-name p {
+    font-size: 14px;
+}
+
+#player {
+    height: 5vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+}
+
+#player i {
+    font-size: 30px;
+    color: #34dfe9
+}
+
+#player i:nth-child(1):hover {
+    color: yellowgreen;
+}
+
+#player i:nth-child(2):hover {
+    color: brown;
+}
+
+#player i:nth-child(3):hover {
+    color: yellowgreen;
+}
+
+#social {
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#social i {
+    font-size: 22px;
+    padding: 20px;
+}
+
+#social i:nth-child(1):hover {
+    color: green;
+}
+
+#social i:nth-child(2):hover {
+    color: red;
+}
+
+#mute {
+    width: 10vw;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
