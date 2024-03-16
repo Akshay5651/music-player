@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!--gilroy bold font-->
+    <link href="https://raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Extrabold.css"
+        rel="stylesheet">
+    <!--remix icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <h1>AkkiTunes</h1>
+        </div>
+        <div id="info">
+            <div id="tracks">
+                <h2>All Songs</h2>
+                <div id="head">
+                    <div>Album</div>
+                    <div>Song Name</div>
+                    <div>Duration</div>
+                </div>
+                <div id="playlist">
+                </div>
+            </div>
+            <div id="right">
+                <h2>Select Your Mood</h2>
+                <div id="artists">
+
+                </div>
+            </div>
+        </div>
+        <div id="albums">
+            <h4>New Albums</h4>
+            <div class="albumGrid">
+
+            </div>
+        </div>
+        <div id="footer">
+            <div id="now-playing">
+                <div id="icon"><img src="https://th.bing.com/th/id/OIP.4vODDdjyfpGOcgDlypj6MAHaHa?rs=1&pid=ImgDetMain"
+                        alt=""></div>
+                <div id="song-name">Currently Playing Now
+                    <p>Song Name</p>
+                </div>
+            </div>
+            <div id="player">
+                <i id="backward" class="ri-skip-back-fill"></i>
+                <div id="playPause">
+                    <i class="ri-stop-fill"></i>
+                </div>
+                <i id="forward" class="ri-skip-forward-fill"></i>
+            </div>
+            <div id="social">
+                <i id="liked" class="ri-thumb-up-line"></i>
+                <i id="disliked" class="ri-thumb-down-line"></i>
+            </div>
+            <div id="mute">
+                <i class="ri-volume-up-fill"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
