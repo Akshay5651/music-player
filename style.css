@@ -112,15 +112,16 @@ img,
 }
 
 #nav {
-  height: 8.2vh;
-  width: 100%;
+  height: 8vh;
+  width: 100vw;
   background-color: #000;
   display: flex;
   align-items: center;
 }
 
 #nav h1 {
-  padding: 0px 40px;
+  font-size: 20px;
+  padding: 0px 30px;
 }
 
 #info {
@@ -173,7 +174,7 @@ img,
 }
 
 #playlist {
-  height: 46vh;
+  height: 48vh;
   padding: 0px 20px;
   overflow-y: auto;
   -ms-overflow-style: none;
@@ -274,8 +275,7 @@ img,
 
 /* Set the overall container styles */
 #albums {
-  height: 19vh;
-  width: 98%;
+  height: 22vh;
   padding: 6px;
   background-color: #08113b;
   background-image: url("https://lh5.googleusercontent.com/proxy/4uF3RD0othILVJiIuxifduBWIkgRqcVmZOCBYm8CxHzwrsQIQfC406iT75alZ10Z5Rv1xGd7W83DtZIew2aEZimhQ-10NwQOPpmpBZJrcggBstToNA2p2T8OO8NYpRTItfuZ78kNTQzVvA=w1200-h630-p-k-no-nu");
@@ -287,14 +287,14 @@ img,
 
 /* Style for album titles */
 #albums h4 {
-  font-size: 14px;
-  margin-bottom: 1vh;
+  height: 25%;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
 /* Scrollable container for album items */
 .albumGrid {
-  height: 80%;
-  min-width: 10vw;
+  height: 75%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -308,7 +308,7 @@ img,
 .album-item {
   height: 100%;
   width: 40vw;
-  padding: 8px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -338,11 +338,12 @@ img,
 }
 
 #now-playing {
-  height: 100%;
+  padding-top: 5px;
   width: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #now-playing img {
@@ -422,12 +423,10 @@ img,
 
 /* For screens smaller than 768px in width */
 @media screen and (max-width: 768px) {
-  #head #duration {
-    margin-left: -50px;
-  }
 
   #playlist{
-    height: 47vh;
+    height: 50vh;
+    padding: 0px 10px;
   }
 
   #playlist #song {
@@ -452,6 +451,11 @@ img,
 
   .album-item img{
     width: 16vw;
+  }
+
+  #icon img{
+    height: 6vh;
+    width: 8vw;
   }
 
   #footer{
@@ -532,8 +536,8 @@ img,
   }
 
   .album-item img{
-    height: 9vh;
-    width: 18vw;
+    height: 13vh;
+    width: 31vw;
   }
 }
 
