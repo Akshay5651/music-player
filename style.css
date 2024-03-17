@@ -129,13 +129,14 @@ img,
   display: flex;
   align-items: center;
   border-top: 2px solid #fff;
+  overflow: hidden;
 }
 
 #tracks {
   height: 60vh;
-  width: 60%;
-  background-color: #08113b;
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1.8)), url("https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  width: 60vw;
+  background-color: #08113b;  
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800");
   background-size: cover;
   background-position: center;
 }
@@ -207,8 +208,8 @@ img,
 
 #right {
   height: 100%;
-  width: 40%;
-  background-color: #08113b91;
+  width: 40vw;
+  background-color: slategrey;
   border-left: 2px solid #fff;
 }
 
@@ -219,8 +220,9 @@ img,
 }
 
 #artists {
-  height: 90%;
-  width: 99%;
+  height: 96%;
+  width: 97%;
+  padding-right: 18px;
   background-color: #08113b;
   background-image: url("https://th.bing.com/th/id/R.d86a2579bd621399a5cf7255d172af7a?rik=UlExd74voln52Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2ff%2fb%2f446690.jpg&ehk=1Ma3gdwstWkRg6V%2bYKqZjSr15DhgESWtV42x9VNeGg0%3d&risl=&pid=ImgRaw&r=0");
   display: grid;
@@ -272,9 +274,9 @@ img,
 
 /* Set the overall container styles */
 #albums {
-  height: 15vh;
-  width: 100;
-  padding: 10px;
+  height: 19vh;
+  width: 98%;
+  padding: 6px;
   background-color: #08113b;
   background-image: url("https://lh5.googleusercontent.com/proxy/4uF3RD0othILVJiIuxifduBWIkgRqcVmZOCBYm8CxHzwrsQIQfC406iT75alZ10Z5Rv1xGd7W83DtZIew2aEZimhQ-10NwQOPpmpBZJrcggBstToNA2p2T8OO8NYpRTItfuZ78kNTQzVvA=w1200-h630-p-k-no-nu");
   background-size: contain;
@@ -305,17 +307,17 @@ img,
 /* Individual album item styles */
 .album-item {
   height: 100%;
-  width: 100%;
+  width: 40vw;
   padding: 8px;
   text-align: center;
 }
 
 /* Style for album cover images */
 .album-item img {
-  height: 8vh;
-  width: 10vw;
+  height: 12vh;
+  width: 12vw;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   padding-right: 1vh;
 }
 
@@ -327,9 +329,10 @@ img,
 }
 
 #footer {
-  height: 5vh;
-  padding: 20px;
+  height: 8vh;
+  padding: 10px;
   display: flex;
+  align-items: center;
   background-color: #121010;
   background-image: url("https://lh3.googleusercontent.com/proxy/Sln2fVNG1CHHkq77FARTQZ9pKMAZcaxN5ubSMXQbxbUSIDwXb-bab3LkaDukRfggksf6DtOsSyJmhXggmPgP3lKz84qUfwIwTHon=s0-d");
 }
@@ -351,11 +354,11 @@ img,
 }
 
 #now-playing #song-name {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 #song-name p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #player {
@@ -423,6 +426,10 @@ img,
     margin-left: -50px;
   }
 
+  #playlist{
+    height: 47vh;
+  }
+
   #playlist #song {
     font-size: medium;
   }
@@ -433,29 +440,34 @@ img,
 
   #artists {
     grid-gap: 0px;
+    padding-right: 18px;
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
-  #now-playing img {
-    width: 10vw;
+  .artist img {
+    min-height: 15vh;
+    min-width: 18vw;
+  }
+
+  .album-item img{
+    width: 16vw;
+  }
+
+  #footer{
+    height: 5%;
+  }
+
+  #player i{
+    font-size: 22px;
   }
 }
 
 /* For screens smaller than 576px in width */
 @media screen and (max-width: 576px) {
-  #artists {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .artist img {
-    max-width: 16vw;
-  }
-
+  
   #playlist #song {
     font-size: small;
-  }
-
-  #now-playing img {
-    width: 15vw;
   }
 }
 
@@ -467,6 +479,10 @@ img,
 
   #head div{
     font-size: 12px;
+  }
+
+  #right h2{
+    font-size: 16px;
   }
 
   #album img{
@@ -483,7 +499,6 @@ img,
 
   #playlist #duration{
     font-size: 10px;
-    margin-left: -35px;
   }
 
   #song-name p {
@@ -491,8 +506,17 @@ img,
   }
 
   #social i{
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px;
+  }
+  #mute{
+    font-size: 14px;
+  }
+
+  #artists{
+    height: 55vh;
+    width: 40vw;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .artist{
@@ -502,7 +526,25 @@ img,
     justify-content: flex-start;
   }
 
-  .album-item img{
-    width: 20vw;
+  .artist img {
+    min-height: 10vh;
+    min-width: 25vw;
   }
+
+  .album-item img{
+    height: 9vh;
+    width: 18vw;
+  }
+}
+
+/* For screens smaller than 400px in width */
+@media screen and (max-width: 400px) {
+  #tracks h2{
+    font-size: 15px;
+  }
+
+  #right h2{
+    font-size: 13px;
+  }
+
 }
