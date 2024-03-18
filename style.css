@@ -54,15 +54,6 @@ body {
   padding: 5px 15px;
 }
 
-#tracks #head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 15px;
-  border-bottom: 2px solid #fff;
-  color: beige;
-}
-
 #album {
   width: 30%;
   display: flex;
@@ -89,7 +80,7 @@ ol:hover {
   font-size: large;
   text-align: center;
   width: 35%;
-  color: burlywood;
+  color: lawngreen;
   pointer-events: none;
 }
 
@@ -107,12 +98,13 @@ img,
 }
 
 #main {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
+  background-color: dimgray;
 }
 
 #nav {
-  height: 8vh;
+  height: 6vh;
   width: 100vw;
   background-color: #000;
   display: flex;
@@ -137,14 +129,14 @@ img,
   height: 60vh;
   width: 60vw;
   background-color: #08113b;  
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800");
   background-size: cover;
   background-position: center;
 }
 
 #tracks h2 {
-  color: darkgrey;
-  font-size: 20px;
+  color: darksalmon;
+  font-size: 18px;
   font-weight: 600;
   padding: 5px 15px;
 }
@@ -158,7 +150,7 @@ img,
 }
 
 #head div {
-  color: thistle;
+  color: blanchedalmond;
 }
 
 #album {
@@ -208,7 +200,7 @@ img,
 }
 
 #right {
-  height: 100%;
+  height: 60vh;
   width: 40vw;
   background-color: slategrey;
   border-left: 2px solid #fff;
@@ -275,7 +267,7 @@ img,
 
 /* Set the overall container styles */
 #albums {
-  height: 22vh;
+  height: 20vh;
   padding: 6px;
   background-color: #08113b;
   background-image: url("https://lh5.googleusercontent.com/proxy/4uF3RD0othILVJiIuxifduBWIkgRqcVmZOCBYm8CxHzwrsQIQfC406iT75alZ10Z5Rv1xGd7W83DtZIew2aEZimhQ-10NwQOPpmpBZJrcggBstToNA2p2T8OO8NYpRTItfuZ78kNTQzVvA=w1200-h630-p-k-no-nu");
@@ -308,7 +300,7 @@ img,
 .album-item {
   height: 100%;
   width: 40vw;
-  padding: 5px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -329,7 +321,7 @@ img,
 }
 
 #footer {
-  height: 8vh;
+  height: 6vh;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -423,6 +415,10 @@ img,
 
 /* For screens smaller than 768px in width */
 @media screen and (max-width: 768px) {
+
+  #head #duration {
+    margin-left: -14vw;
+  }
 
   #playlist{
     height: 50vh;
@@ -518,7 +514,7 @@ img,
   }
 
   #artists{
-    height: 55vh;
+    height: 100%;
     width: 40vw;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -536,8 +532,7 @@ img,
   }
 
   .album-item img{
-    height: 13vh;
-    width: 31vw;
+    width: 22vw;
   }
 }
 
