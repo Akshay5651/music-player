@@ -8,7 +8,7 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
-  font-family: "Gilroy";
+  font-family: 'Gilroy-Medium', sans-serif;
 }
 
 html,
@@ -19,20 +19,6 @@ body {
   /* Hide scrollbar in IE */
   scrollbar-width: none;
   /* Hide scrollbar in Firefox and Edge */
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.eot");
-  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
-    url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.ttf")
-      format("truetype");
-  font-weight: 800;
-  font-style: normal;
 }
 
 #info {
@@ -98,7 +84,7 @@ img,
 }
 
 #main {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   background-color: dimgray;
 }
@@ -280,13 +266,13 @@ img,
 /* Style for album titles */
 #albums h4 {
   height: 25%;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 10px;
 }
 
 /* Scrollable container for album items */
 .albumGrid {
-  height: 75%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -307,7 +293,7 @@ img,
 /* Style for album cover images */
 .album-item img {
   height: 12vh;
-  width: 12vw;
+  width: 14vw;
   object-fit: cover;
   border-radius: 8px;
   padding-right: 1vh;
@@ -321,7 +307,7 @@ img,
 }
 
 #footer {
-  height: 6vh;
+  height: 6.5vh;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -532,7 +518,7 @@ img,
   }
 
   .album-item img{
-    width: 22vw;
+    width: 26vw;
   }
 }
 
