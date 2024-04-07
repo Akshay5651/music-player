@@ -98,8 +98,10 @@ img,
 }
 
 #nav h1 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 800;
   padding: 0px 30px;
+  color: #55c5ff;
 }
 
 #info {
@@ -115,7 +117,7 @@ img,
   height: 60vh;
   width: 60vw;
   background-color: #08113b;  
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -188,7 +190,7 @@ img,
 #right {
   height: 60vh;
   width: 40vw;
-  background-color: slategrey;
+  background-color: rgb(57 67 77);
   border-left: 2px solid #fff;
 }
 
@@ -196,6 +198,7 @@ img,
   font-size: 20px;
   font-weight: 600;
   padding: 5px 15px;
+  color: #beffba;
 }
 
 #artists {
@@ -203,7 +206,7 @@ img,
   width: 97%;
   padding-right: 18px;
   background-color: #08113b;
-  background-image: url("https://th.bing.com/th/id/R.d86a2579bd621399a5cf7255d172af7a?rik=UlExd74voln52Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2ff%2fb%2f446690.jpg&ehk=1Ma3gdwstWkRg6V%2bYKqZjSr15DhgESWtV42x9VNeGg0%3d&risl=&pid=ImgRaw&r=0");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("https://e1.pxfuel.com/desktop-wallpaper/526/27/desktop-wallpaper-blue-music-notes-backgrounds-music-background-thumbnail.jpg");
   display: grid;
   background-size: cover;
   grid-template-columns: repeat(3, 1fr);
@@ -235,7 +238,9 @@ img,
 }
 
 .artist p {
-  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffb742;
   pointer-events: none;
 }
 
@@ -266,7 +271,9 @@ img,
 /* Style for album titles */
 #albums h4 {
   height: 25%;
-  font-size: 16px;
+  color: #cbc10c;
+  font-size: 18px;
+  font-weight: 800;
   padding-left: 10px;
 }
 
@@ -301,9 +308,9 @@ img,
 
 /* Album description text */
 .album-item p {
-  font-size: 12px;
-  color: beige;
-  font-weight: 500;
+  font-size: 16px;
+  color: #629e25;
+  font-weight: 600;
 }
 
 #footer {
@@ -333,11 +340,14 @@ img,
 }
 
 #now-playing #song-name {
-  font-size: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e7a177;
 }
 
 #song-name p {
-  font-size: 12px;
+  font-size: 14px;
+  color: #9494eb;
 }
 
 #player {
@@ -426,6 +436,10 @@ img,
 
   }
 
+  #albums h4{
+    font-size: small;
+  }
+
   .artist img {
     min-height: 15vh;
     min-width: 18vw;
@@ -433,6 +447,10 @@ img,
 
   .album-item img{
     width: 16vw;
+  }
+
+  .album-item p{
+    font-size: small;
   }
 
   #icon img{
@@ -446,6 +464,10 @@ img,
 
   #player i{
     font-size: 22px;
+  }
+
+  #now-playing #song-name {
+    font-size: 12px;
   }
 }
 

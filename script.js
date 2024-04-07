@@ -111,9 +111,9 @@ function selectMood() {
 
     albums.addEventListener('click', (dets) => {
         var clutter = "";
-        defaultArray = genres[dets.target.id].songs;
+        choosenArray = genres[dets.target.id].songs;
 
-        defaultArray.forEach(function (obj, index) {
+        choosenArray.forEach(function (obj, index) {
             clutter += `<ol class="currentStack" id="${index}">
         <div id="album">
             <img src="${obj.image}" alt="">
@@ -162,8 +162,9 @@ function startPlaying() {
     var currentPlaylist = document.querySelector('#playlist');
     var playPause = document.querySelector('#playPause');
 
+    choosenArray = defaultArray;
     currentPlaylist.addEventListener('click', (dets) => {
-        var songDetail = defaultArray[dets.target.id];
+        var songDetail = choosenArray[dets.target.id];
         audio.src = `${songDetail.url}`;
         audio.play();
         var nowPlaying = document.querySelector('#now-playing');
