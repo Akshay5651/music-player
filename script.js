@@ -1,7 +1,7 @@
 // All genres - New Songs Add here
 var genres = [
     {
-        albumName: "Mix Songs", profile: "https://th.bing.com/th/id/R.7a37c37ac29910afa383100c69c4fc61?rik=LDPxVGjDVGFbaQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fColorful-music-wallpaper-HD.jpg&ehk=7YZu3hZCkx%2bwnX1%2f9G7Hw7AIfVUtb%2f63Zvvdoqh4FW0%3d&risl=&pid=ImgRaw&r=0", songs: [
+        albumName: "Mix Songs", profile: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkKllyUu396gYjslmYCszsMxBnt21ZtbPPbMNBy7IaQ&s", songs: [
             { album: "High Tides", name: "Divinity", image: "https://joystock.org/track-images/divinity.jpg", url: "https://tracks-new.joystock.org/joystock-divinity.mp3", duration: "05:34" },
             { album: "Mischief", name: "Write Your Story", image: "https://joystock.org/track-images/write-your-story.jpg", url: "https://tracks-new.joystock.org/joystock-write-your-story.mp3", duration: "03:22" },
             { album: "Unknown Brain", name: "Epic", image: "https://joystock.org/track-images/epic.jpg", url: "https://tracks-new.joystock.org/joystock-epic.mp3", duration: "07:24" },
@@ -48,7 +48,7 @@ var genres = [
         ]
     }, 
     {
-        albumName: "Mix Songs", profile: "https://th.bing.com/th/id/R.7a37c37ac29910afa383100c69c4fc61?rik=LDPxVGjDVGFbaQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fColorful-music-wallpaper-HD.jpg&ehk=7YZu3hZCkx%2bwnX1%2f9G7Hw7AIfVUtb%2f63Zvvdoqh4FW0%3d&risl=&pid=ImgRaw&r=0", songs: [
+        albumName: "Mix Songs", profile: "https://dev-resws.hungamatech.com/featured_content/70030e40a2ecbad87ae86f074cf1971e_500x500.jpg", songs: [
             { album: "High Tides", name: "Divinity", image: "https://joystock.org/track-images/divinity.jpg", url: "https://tracks-new.joystock.org/joystock-divinity.mp3", duration: "05:34" },
             { album: "Mischief", name: "Write Your Story", image: "https://joystock.org/track-images/write-your-story.jpg", url: "https://tracks-new.joystock.org/joystock-write-your-story.mp3", duration: "03:22" },
             { album: "Unknown Brain", name: "Epic", image: "https://joystock.org/track-images/epic.jpg", url: "https://tracks-new.joystock.org/joystock-epic.mp3", duration: "07:24" },
@@ -57,7 +57,7 @@ var genres = [
         ]
     },
     {
-        albumName: "Lofi Songs", profile: "https://th.bing.com/th/id/OIP.p7fp6NTOpJqvTmpZG1s2yAHaEK?rs=1&pid=ImgDetMain", genre: "lofiSongs",
+        albumName: "Lofi Songs", profile: "https://www.ubetoo.com/wp-content/uploads/2024/01/ubetoo-best-amapiano-songs-mix-2024-vol-1-2024_01_18_12_27_37-ubetoo.webp", genre: "lofiSongs",
         songs: [
             { album: "Hawaii Vacation", name: "TVARI", image: "https://cdn.pixabay.com/audio/2023/07/22/02-56-04-375_200x200.jpg", url: "https://cdn.pixabay.com/download/audio/2023/07/22/audio_2661a812be.mp3?filename=tvari-hawaii-vacation-159069.mp3", duration: "03:04" },
             { album: "5Vineemusic", name: "Vinee Heights", image: "https://cdn.pixabay.com/audio/2022/12/16/03-22-51-580_200x200.jpg", url: "https://cdn.pixabay.com/download/audio/2022/11/23/audio_97769bb35d.mp3?filename=vinee-heights-126947.mp3", duration: "04:17" },
